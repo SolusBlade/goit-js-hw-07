@@ -39,10 +39,9 @@ function onImgClick(e) {
     <img src = '${el.dataset.source}' width="800" height="600">
     `)
     instance.show();
-    console.log(instance);
+
     listRef.addEventListener('keydown', (e)=>{
-        if(e.code === "Escape"){
-            console.log("Escape:")                
+        if(e.code === "Escape"){            
             instance.close();
         }
     });
